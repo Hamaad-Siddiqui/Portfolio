@@ -1,18 +1,18 @@
-import './globals.css'
+import Container from '@/components/Container';
+import { montserrat } from './fonts';
+import './globals.css';
 
 export default function RootLayout({
-  children,
+ children,
 }: {
-  children: React.ReactNode
+ children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
-    </html>
-  )
+ return (
+  <html lang='en' className={montserrat.variable}>
+   <head />
+   <body className='bg-snow dark:bg-coal'>
+    <Container>{children}</Container>
+   </body>
+  </html>
+ );
 }

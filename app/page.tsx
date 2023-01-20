@@ -1,91 +1,40 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Image from 'next/image';
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+ return (
+  <div className='flex flex-col'>
+   <div className='flex flex-row justify-between mt-24 items-center'>
+    <div className='flex flex-col max-w-[46rem] gap-1'>
+     <h1 className='font-semibold text-5xl text-black dark:text-white'>
+      Hamaad Siddiqui
+     </h1>
+     <p className='text-base text-black dark:text-white'>
+      <span className='font-semibold'>Full-Stack Developer</span> building
+      intuitive and efficient applications using React / Next.js & Flutter.
+      Passionate about staying current with industry developments and
+      continuously expanding my skillset to deliver innovative solutions.
+     </p>
+    </div>
+    <Image
+     src='/avatar.jpg'
+     alt='Hamaad Siddiqui'
+     width={180}
+     height={180}
+     className='rounded-full'
+    />
+   </div>
+   <div className='flex flex-row justify-between items-center w-[35.375rem] mt-5'>
+    <a href='/resume.pdf' target='_blank' rel='noreferrer'>
+     <button className='border-2 border-darkGray font-semibold dark:text-white text-black w-60 py-2 px-4 rounded-md'>
+      My Résumé
+     </button>
+    </a>
+    <a href='mailto:hamaad_siddiqui@hotmail.com'>
+     <button className='bg-black dark:bg-white font-semibold dark:text-black text-white w-60 py-2 px-4 rounded-md'>
+      Contact Me
+     </button>
+    </a>
+   </div>
+  </div>
+ );
 }
