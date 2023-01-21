@@ -1,5 +1,6 @@
 import Container from '@/components/Container';
 import { montserrat } from './fonts';
+import Providers from './providers';
 import './globals.css';
 
 export default function RootLayout({
@@ -8,10 +9,12 @@ export default function RootLayout({
  children: React.ReactNode;
 }) {
  return (
-  <html lang='en' className={montserrat.variable}>
+  <html lang='en' className={montserrat.variable} suppressHydrationWarning>
    <head />
    <body className='bg-snow dark:bg-coal'>
-    <Container>{children}</Container>
+    <Providers>
+     <Container>{children}</Container>
+    </Providers>
    </body>
   </html>
  );

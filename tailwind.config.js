@@ -3,10 +3,10 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
  content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
- darkMode: 'media',
+ darkMode: 'class',
  theme: {
   fontSize: {
-   sm: '0.6875rem', // 11px
+   sm: '0.7rem', // 11px
    base: '0.9375rem', // 15px
    xl: '1rem', // 16px
    '2xl': '1.25rem', // 20px
@@ -18,7 +18,8 @@ module.exports = {
    colors: {
     snow: '#F9FAFB',
     coal: '#0A0A0A',
-    darkGray: '#313131',
+    gray: '#313131',
+    cyan: '#00D5DB',
    },
    fontFamily: {
     sans: ['var(--font-montserrat)', ...defaultTheme.fontFamily.sans],
