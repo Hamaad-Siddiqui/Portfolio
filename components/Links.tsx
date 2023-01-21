@@ -1,6 +1,6 @@
 export default function Links() {
  return (
-  <div className='flex flex-col items-center justify-center gap-8 ml-24 h-screen'>
+  <div className='flex flex-row items-center justify-start gap-6 ml-0 py-8 h-auto md:ml-24 md:flex-col md:justify-center sm:gap-8 md:h-screen md:py-0'>
    <a
     href='mailto:hamaad_siddiqui@hotmail.com'
     className='text-black dark:text-white'
