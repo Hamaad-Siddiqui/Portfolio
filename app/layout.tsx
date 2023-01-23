@@ -1,6 +1,7 @@
 import Container from '@/components/Container';
 import { montserrat } from './fonts';
 import Providers from './providers';
+import { AnalyticsWrapper } from './analytics';
 import './globals.css';
 
 export default function RootLayout({
@@ -15,6 +16,7 @@ export default function RootLayout({
     <Providers>
      <Container>{children}</Container>
     </Providers>
+    <AnalyticsWrapper />
    </body>
   </html>
  );
