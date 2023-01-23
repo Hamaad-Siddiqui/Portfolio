@@ -16,11 +16,18 @@ export default async function handler(
 
  try {
   await res.revalidate('/');
-  return res.json({ revalidated: true });
+  res.status(200).json({ message: 'Revalidated' });
+  return;
  } catch (err) {
   return res.status(500).send('Error revalidating');
  }
 }
+
+export const config = {
+ api: {
+  bodyParser: false,
+ },
+};
 
 async function readBody(readable: NextApiRequest) {
  const chunks = [];
