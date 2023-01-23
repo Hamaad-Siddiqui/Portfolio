@@ -13,6 +13,9 @@
 # sanity
 /.sanity
 
+# build
+/dist
+
 # production
 /build
 
