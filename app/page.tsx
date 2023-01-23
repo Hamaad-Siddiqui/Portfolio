@@ -1,7 +1,23 @@
 import Image from 'next/image';
+import { client } from '@/lib/sanity-server';
+import { Work } from '@/lib/types';
 import Card from '@/components/Card';
 
-export default function Home() {
+async function getWork() {
+ const query = `*[_type == 'work']{
+  title,
+  description,
+  image,
+  stack,
+  tags,
+  links
+ }`;
+ const work: Work[] = await client.fetch(query);
+ return work;
+}
+
+export default async function Home() {
+ const work = await getWork();
  return (
   <div className='flex flex-col'>
    <div className='flex flex-row justify-between mt-4 items-center gap-8'>
@@ -40,75 +56,17 @@ export default function Home() {
     Work
    </h2>
    <div className='flex flex-row justify-between items-center gap-10 flex-wrap max-[978px]:justify-center'>
-    <Card
-     title='Project Name'
-     description='NFT marketplace, metaverse spaces built for music fans, and web3 portals for artists'
-     image='/avatar.jpg'
-     stack={['React', 'Next.js', 'TypeScript', 'TailwindCSS']}
-     tags={['Development', 'Personal']}
-     links={{
-      github: 'https://github.com/vercel/next.js',
-      playStore: 'https://apps.apple.com/us/app/nextjs/id1498059439',
-     }}
-    />
-    <Card
-     title='Project Name'
-     description='NFT marketplace, metaverse spaces built for music fans, and web3 portals for artists'
-     image='/avatar.jpg'
-     stack={[
-      'React',
-      'Next.js',
-      'TypeScript',
-      'TailwindCSS',
-      'React',
-      'Next.js',
-      'TypeScript',
-     ]}
-     tags={['Development', 'Personal']}
-     links={{
-      github: 'https://github.com/vercel/next.js',
-      appStore: 'https://apps.apple.com/us/app/nextjs/id1498059439',
-     }}
-    />
-    <Card
-     title='Project Name'
-     description='NFT marketplace, metaverse spaces built for music fans, and web3 portals for artists'
-     image='/avatar.jpg'
-     stack={[
-      'React',
-      'Next.js',
-      'TypeScript',
-      'TailwindCSS',
-      'React',
-      'Next.js',
-      'TypeScript',
-     ]}
-     tags={['Development', 'Personal']}
-     links={{
-      github: 'https://github.com/vercel/next.js',
-      website: 'https://github.com/vercel/next.js',
-     }}
-    />
-    <Card
-     title='Project Name'
-     description='NFT marketplace, metaverse spaces built for music fans, and web3 portals for artists'
-     image='/avatar.jpg'
-     stack={[
-      'React',
-      'Next.js',
-      'TypeScript',
-      'TailwindCSS',
-      'React',
-      'Next.js',
-      'TypeScript',
-     ]}
-     tags={['Development', 'Personal']}
-     links={{
-      github: 'https://github.com/vercel/next.js',
-      playStore: 'https://apps.apple.com/us/app/nextjs/id1498059439',
-      appStore: 'https://apps.apple.com/us/app/nextjs/id1498059439',
-     }}
-    />
+    {work.map((item, i) => (
+     <Card
+      key={i}
+      title={item.title}
+      description={item.description}
+      image={item.image}
+      stack={item.stack}
+      tags={item.tags}
+      links={item.links}
+     />
+    ))}
    </div>
   </div>
  );

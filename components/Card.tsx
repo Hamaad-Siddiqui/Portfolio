@@ -1,26 +1,14 @@
 import Image from 'next/image';
+import { Work } from '@/lib/types';
+import { urlForImage } from '@/lib/sanity';
 import { AppStoreIcon, GitHubIcon, LinkIcon, PlayStoreIcon } from './Icons';
 
-interface CardProps {
- title: string;
- description: string;
- image: string;
- stack: string[];
- tags: string[];
- links: {
-  github?: string;
-  website?: string;
-  playStore?: string;
-  appStore?: string;
- };
-}
-
-export default function Card(props: CardProps) {
+export default function Card(props: Work) {
  return (
   <div className='flex flex-col w-[30rem] h-52 max-[1170px]:w-[28rem] max-[1100px]:w-[26rem] max-[1100px]:h-56 max-[1040px]:w-[24rem] max-[976px]:w-[30rem] max-[976px]:h-52 max-[470px]:h-56 max-[374px]:h-[16rem] max-[362px]:h-[18rem] border-2 border-gray rounded-md px-5 py-4'>
    <div className='flex flex-row max-[374px]:flex-row-reverse items-center gap-5 max-[374px]:gap-2'>
     <Image
-     src={props.image}
+     src={urlForImage(props.image).url()}
      alt={props.title}
      width={76}
      height={76}
@@ -33,18 +21,21 @@ export default function Card(props: CardProps) {
    </div>
    <div className='flex flex-col justify-between h-full mt-4'>
     <div className='flex flex-row items-center gap-2 flex-wrap'>
-     {props.stack.map((name) => (
-      <span className='bg-gray text-sm font-medium py-0.5 px-2 rounded-xl text-white'>
+     {props.stack.map((name, i) => (
+      <span
+       className='bg-gray text-sm font-medium py-0.5 px-2 rounded-xl text-white'
+       key={i}
+      >
        {name}
       </span>
      ))}
     </div>
     <div className='flex flex-row items-end justify-between w-full text-black dark:text-white '>
      <div className='flex flex-row items-center'>
-      {props.tags.map((tag, index) => (
-       <div className='flex flex-row items-center text-sm font-medium'>
+      {props.tags.map((tag, i) => (
+       <div className='flex flex-row items-center text-sm font-medium' key={i}>
         {tag}
-        {index !== props.tags.length - 1 && <span className='mx-1'>•</span>}
+        {i !== props.tags.length - 1 && <span className='mx-1'>•</span>}
        </div>
       ))}
      </div>
