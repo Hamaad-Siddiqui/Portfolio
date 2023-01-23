@@ -1,0 +1,38 @@
+{
+ "$schema": "https://openapi.vercel.sh/vercel.json",
+ "cleanUrls": true,
+ "redirects": [
+  {
+   "source": "/resume",
+   "destination": "/resume.pdf"
+  },
+  {
+   "source": "/upwork",
+   "destination": "https://www.upwork.com/freelancers/~015da25f21e50175bf"
+  },
+  {
+   "source": "/linkedin",
+   "destination": "https://www.linkedin.com/in/hamaad-siddiqui"
+  },
+  {
+   "source": "/github",
+   "destination": "https://github.com/Hamaad-Siddiqui"
+  },
+  {
+   "source": "/twitter",
+   "destination": "https://twitter.com/HamaadSiddiqui"
+  },
+  {
+   "source": "/twitter",
+   "destination": "https://twitter.com/HamaadSiddiqui"
+  },
+  {
+   "source": "/mail",
+   "destination": "mailto:hamaad_siddiqui@hotmail.com"
+  },
+  {
+   "source": "/meeting",
+   "destination": "https://cal.com/hamaad"
+  }
+ ]
+}
