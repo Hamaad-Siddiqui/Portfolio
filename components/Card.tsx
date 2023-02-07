@@ -23,7 +23,7 @@ export default function Card(props: Work) {
     <div className='flex flex-row items-center gap-2 flex-wrap'>
      {props.stack.map((name, i) => (
       <span
-       className='bg-gray text-sm font-medium py-0.5 px-2 rounded-xl text-white'
+       className='dark:bg-smoke bg-gray text-sm font-medium py-0.5 px-2 rounded-xl text-white'
        key={i}
       >
        {name}

@@ -18,7 +18,8 @@ module.exports = {
    colors: {
     snow: '#F9FAFB',
     coal: '#0A0A0A',
-    gray: '#313131',
+    gray: '#292929',
+    smoke: '#3d3d3d',
     cyan: '#00D5DB',
    },
    fontFamily: {
