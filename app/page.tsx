@@ -73,7 +73,7 @@ export default async function Home() {
      If you have any questions or would like to work together, feel free to
      reach out!
     </h2>
-    <a href='/30'>
+    <a href='/meeting'>
      <button className='border-2 border-gray font-semibold dark:text-white text-black text-base w-60 py-2 px-4 rounded-md max-[520px]:w-40 max-[380px]:w-34 sm:text-xl mb-10'>
       Schedule A Call
      </button>
