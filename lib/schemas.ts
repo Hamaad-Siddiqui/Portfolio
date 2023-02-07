@@ -5,6 +5,11 @@ export const schemaTypes = [
   type: 'document',
   fields: [
    {
+    title: 'Position/Index in the website',
+    name: 'position',
+    type: 'number',
+   },
+   {
     title: 'Title',
     name: 'title',
     type: 'string',

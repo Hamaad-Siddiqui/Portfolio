@@ -4,7 +4,7 @@ import { Work } from '@/lib/types';
 import Card from '@/components/Card';
 
 async function getWork() {
- const query = `*[_type == 'work']{
+ const query = `*[_type == 'work']| order(position asc) {
   title,
   description,
   image,
