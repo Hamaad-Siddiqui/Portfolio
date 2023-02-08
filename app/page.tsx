@@ -74,7 +74,7 @@ export default async function Home() {
      reach out!
     </h2>
     <a href='/meeting' target='_blank' rel='noreferrer'>
-     <button className='border-2 border-gray font-semibold dark:text-white text-black text-base w-60 py-2 px-4 rounded-md max-[520px]:w-44 sm:text-xl'>
+     <button className='border-2 border-gray font-semibold dark:text-white text-black text-base w-60 py-2 px-4 rounded-md max-[520px]:w-45 sm:text-xl'>
       Schedule Meeting
      </button>
     </a>
