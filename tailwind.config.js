@@ -16,6 +16,20 @@ module.exports = {
   },
   extend: {
    colors: {
+    // light
+    primary: '#212529',
+    background: '#E9ECEF',
+
+    light: '#CED4DA',
+    secondary: '#ADB5BD',
+    // dark
+    // dark-txt = darkPrimary
+    darkPrimary: '#E5E5E5',
+    darkBackground: '#1A1A1A',
+
+    darkLight: '#27272A',
+    darkBadge: '#1E1E1E',
+    // old
     snow: '#F9FAFB',
     coal: '#0A0A0A',
     gray: '#292929',

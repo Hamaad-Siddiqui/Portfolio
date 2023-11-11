@@ -3,6 +3,26 @@
 @tailwind utilities;
 
 ::selection {
- background-color: #00d5db;
+ background-color: #ffffff;
  color: #000000;
+}
+
+html {
+ font-family: var(--font-questrial);
+}
+
+h1 {
+ font-family: var(--font-montserrat);
+}
+
+h2 {
+ font-family: var(--font-montserrat);
+}
+
+h3 {
+ font-family: var(--font-montserrat);
+}
+
+h4 {
+ font-family: var(--font-montserrat);
 }

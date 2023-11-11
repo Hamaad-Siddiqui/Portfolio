@@ -5,3 +5,9 @@ export const montserrat = localFont({
  variable: '--font-montserrat',
  display: 'optional',
 });
+
+export const questrial = localFont({
+ src: '../public/static/fonts/Questrial.ttf',
+ variable: '--font-questrial',
+ display: 'optional',
+});

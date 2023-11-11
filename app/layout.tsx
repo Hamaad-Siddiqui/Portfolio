@@ -1,7 +1,7 @@
 import Container from '@/components/Container';
-import { montserrat } from './fonts';
-import Providers from './providers';
+import { montserrat, questrial } from './fonts';
 import { AnalyticsWrapper } from './analytics';
+import Providers from './providers';
 import './globals.css';
 
 export default function RootLayout({
@@ -10,9 +10,13 @@ export default function RootLayout({
  children: React.ReactNode;
 }) {
  return (
-  <html lang='en' className={montserrat.variable} suppressHydrationWarning>
+  <html
+   lang='en'
+   className={`${montserrat.variable} ${questrial.variable}`}
+   suppressHydrationWarning
+  >
    <head />
-   <body className='bg-snow dark:bg-coal'>
+   <body className='bg-background dark:bg-darkBackground'>
     <Providers>
      <Container>{children}</Container>
     </Providers>
