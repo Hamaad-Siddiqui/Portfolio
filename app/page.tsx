@@ -45,16 +45,16 @@ export default async function Home() {
      the links below.
     </p>
    </div>
-   <div className='flex flex-row mt-5 items-center flex-wrap'>
+   <div className='flex flex-row mt-5 items-center flex-wrap text-primary dark:text-darkPrimary '>
     <Links />
     <div className='flex mb-6'>
      <a href='/meeting' target='_blank' rel='noreferrer'>
-      <button className='border dark:border-background border-darkBackground text-base px-1 pr-2 rounded flex items-center gap-2'>
+      <button className='border dark:border-darkPrimary border-primary text-base px-1 pr-2 rounded flex items-center gap-2'>
        <CalIcon /> Book a call
       </button>
      </a>
      <a href='/resume.pdf' target='_blank' rel='noreferrer' className='ml-6'>
-      <button className='border dark:border-background border-darkBackground text-base px-1 pr-2 rounded flex items-center gap-2'>
+      <button className='border dark:border-darkPrimary border-primary text-base px-1 pr-2 rounded flex items-center gap-2'>
        <DocIcon /> Résumé
       </button>
      </a>

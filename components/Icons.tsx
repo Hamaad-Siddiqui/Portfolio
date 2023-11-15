@@ -4,6 +4,34 @@ interface IconProps {
  height?: number;
 }
 
+export const ForkIcon = ({ height = 20, width = 20 }: IconProps) => (
+ <svg
+  xmlns='http://www.w3.org/2000/svg'
+  width={width}
+  height={height}
+  viewBox='0 0 22 20'
+ >
+  <path
+   fill='currentColor'
+   d='M7 5a2 2 0 1 1 3 1.732v7.308h1.791a2 2 0 0 0 2-2v-1.256a2 2 0 1 1 2-.024v1.28a4 4 0 0 1-4 4H10v1.228A2 2 0 0 1 9 21a2 2 0 0 1-1-3.732V6.732A2 2 0 0 1 7 5Z'
+  />
+ </svg>
+);
+
+export const CCIcon = ({ size = 15 }: IconProps) => (
+ <svg
+  xmlns='http://www.w3.org/2000/svg'
+  width={size}
+  height={size}
+  viewBox='0 0 256 256'
+ >
+  <path
+   fill='currentColor'
+   d='M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Zm-32-88a32 32 0 0 0 57.6 19.2a8 8 0 0 1 12.8 9.61a48 48 0 1 1 0-57.62a8 8 0 0 1-12.8 9.61A32 32 0 0 0 96 128Z'
+  />
+ </svg>
+);
+
 export const CalIcon = ({ width = 14, height = 16 }: IconProps) => (
  <svg
   xmlns='http://www.w3.org/2000/svg'

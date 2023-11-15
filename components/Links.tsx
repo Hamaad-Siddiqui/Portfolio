@@ -11,7 +11,7 @@ export default function Links() {
   <div className='flex flex-row items-center justify-start gap-[13px] mr-7 mb-6'>
    <a
     href='mailto:hamaad_siddiqui@hotmail.com'
-    className='text-black dark:text-white'
+    className='text-primary dark:text-darkPrimary'
     target='_blank'
     rel='noreferrer'
    >
@@ -19,7 +19,7 @@ export default function Links() {
    </a>
    <a
     href='https://github.com/Hamaad-Siddiqui'
-    className='text-black dark:text-white'
+    className='text-primary dark:text-darkPrimary'
     target='_blank'
     rel='noreferrer'
    >
@@ -27,7 +27,7 @@ export default function Links() {
    </a>
    <a
     href='https://twitter.com/HamaadSiddiqui'
-    className='text-black dark:text-white'
+    className='text-primary dark:text-darkPrimary'
     target='_blank'
     rel='noreferrer'
    >
@@ -35,7 +35,7 @@ export default function Links() {
    </a>
    <a
     href='https://www.upwork.com/freelancers/~015da25f21e50175bf'
-    className='text-black dark:text-white'
+    className='text-primary dark:text-darkPrimary'
     target='_blank'
     rel='noreferrer'
    >
@@ -43,7 +43,7 @@ export default function Links() {
    </a>
    <a
     href='https://www.linkedin.com/in/hamaad-siddiqui'
-    className='text-black dark:text-white mt-1'
+    className='text-primary dark:text-darkPrimary mt-1'
     target='_blank'
     rel='noreferrer'
    >
