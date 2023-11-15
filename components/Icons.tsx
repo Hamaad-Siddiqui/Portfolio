@@ -66,7 +66,7 @@ export const GitHubIcon = ({ size = 24 }: IconProps) => (
  </svg>
 );
 
-export const TwitterIcon = ({ size = 24 }: IconProps) => (
+export const TwitterIcon = ({ size = 23 }: IconProps) => (
  <svg
   xmlns='http://www.w3.org/2000/svg'
   width={size}
@@ -121,7 +121,7 @@ export const LinkedInIcon = ({ size = 24 }: IconProps) => (
  </svg>
 );
 
-export const LinkIcon = ({ size = 24 }: IconProps) => (
+export const LinkIcon = ({ size = 20 }: IconProps) => (
  <svg
   xmlns='http://www.w3.org/2000/svg'
   width={size}
@@ -135,7 +135,7 @@ export const LinkIcon = ({ size = 24 }: IconProps) => (
  </svg>
 );
 
-export const PlayStoreIcon = ({ size = 24 }: IconProps) => (
+export const PlayStoreIcon = ({ size = 20 }: IconProps) => (
  <svg
   xmlns='http://www.w3.org/2000/svg'
   width={size}
@@ -149,7 +149,7 @@ export const PlayStoreIcon = ({ size = 24 }: IconProps) => (
  </svg>
 );
 
-export const AppStoreIcon = ({ size = 24 }: IconProps) => (
+export const AppStoreIcon = ({ size = 20 }: IconProps) => (
  <svg
   xmlns='http://www.w3.org/2000/svg'
   width={size}

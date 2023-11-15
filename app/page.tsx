@@ -49,20 +49,24 @@ export default async function Home() {
     <Links />
     <div className='flex mb-6'>
      <a href='/meeting' target='_blank' rel='noreferrer'>
-      <button className='border text-base px-1 pr-2 rounded flex items-center gap-2'>
+      <button className='border dark:border-background border-darkBackground text-base px-1 pr-2 rounded flex items-center gap-2'>
        <CalIcon /> Book a call
       </button>
      </a>
      <a href='/resume.pdf' target='_blank' rel='noreferrer' className='ml-6'>
-      <button className='border text-base px-1 pr-2 rounded flex items-center gap-2'>
+      <button className='border dark:border-background border-darkBackground text-base px-1 pr-2 rounded flex items-center gap-2'>
        <DocIcon /> Résumé
       </button>
      </a>
     </div>
    </div>
-   <h2 className='font-semibold text-3xl text-black dark:text-white mt-10 mb-10'>
-    Work
+   <h2 className='font-semibold text-3xl text-primary dark:text-darkPrimary mt-10'>
+    Past Projects
    </h2>
+   <p className='text-primary dark:text-darkPrimary mt-2 mb-10'>
+    Here is a list of few of my past work & clients, if you want to see more
+    feel free to contact me.
+   </p>
    <div className='flex flex-row justify-between items-center gap-10 flex-wrap max-[978px]:justify-center'>
     {work.map((item, i) => (
      <Card
