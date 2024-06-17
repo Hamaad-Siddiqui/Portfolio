@@ -3,26 +3,33 @@
 @tailwind utilities;
 
 ::selection {
- background-color: #ffffff;
- color: #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 html {
- font-family: var(--font-questrial);
+  font-family: var(--font-questrial);
 }
 
 h1 {
- font-family: var(--font-montserrat);
+  font-family: var(--font-montserrat);
 }
 
 h2 {
- font-family: var(--font-montserrat);
+  font-family: var(--font-montserrat);
 }
 
 h3 {
- font-family: var(--font-montserrat);
+  font-family: var(--font-montserrat);
 }
 
 h4 {
- font-family: var(--font-montserrat);
+  font-family: var(--font-montserrat);
+}
+#chips canvas {
+  margin: auto;
+  width: 600px !important;
+  height: 600px !important;
+  max-width: 80vw;
+  max-height: 80vw;
 }

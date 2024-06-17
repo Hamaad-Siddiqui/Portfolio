@@ -1,18 +1,18 @@
-import { defineConfig } from 'sanity';
-import { deskTool } from 'sanity/desk';
-import { visionTool } from '@sanity/vision';
-import { schemaTypes } from './lib/schemas';
+import { defineConfig } from "sanity";
+import { deskTool } from "sanity/desk";
+import { visionTool } from "@sanity/vision";
+import { schemaTypes } from "./lib/schemas";
 
 export default defineConfig({
- name: 'default',
- title: 'Portfolio',
+  name: "default",
+  title: "Portfolio",
 
- projectId: 'z59tidwh',
- dataset: 'production',
+  projectId: "z59tidwh",
+  dataset: "production",
 
- plugins: [deskTool(), visionTool()],
+  plugins: [deskTool(), visionTool()],
 
- schema: {
-  types: schemaTypes,
- },
+  schema: {
+    types: schemaTypes,
+  },
 });

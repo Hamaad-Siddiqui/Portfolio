@@ -3,7 +3,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class",
   theme: {
     fontSize: {
       sm: "0.7rem", // 11px
@@ -16,13 +15,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#212529",
-        background: "#E9ECEF",
-
-        light: "#CED4DA",
-        secondary: "#ADB5BD",
         darkPrimary: "#E5E5E5",
-        darkBackground: "#0A0A0A",
+        darkBackground: "#000000",
 
         darkLight: "#27272A",
         darkBadge: "#1E1E1E",
