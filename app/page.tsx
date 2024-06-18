@@ -71,7 +71,7 @@ export default async function Home() {
         </div>
         <Chips />
       </div>
-      <h2 className="font-semibold text-3xl text-primary mt-6">
+      <h2 className="font-semibold text-3xl text-primary mt-10">
         Past Projects
       </h2>
       <p className="text-primary mt-2 mb-10">
