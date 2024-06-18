@@ -5,7 +5,7 @@ import { lazy } from "react";
 const Spline = lazy(() => import("@splinetool/react-spline"));
 
 function getWidth() {
-  const { innerWidth: width, innerHeight: height } = window;
+  const { innerWidth: width } = window;
   return width;
 }
 

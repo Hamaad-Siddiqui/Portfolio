@@ -43,9 +43,9 @@ export default async function Home() {
               to deliver innovative solutions.
             </p>
             <p className="text-primary mt-4">
-              I'm always eager to explore new projects, technologies, and
-              opportunities. If you'd like to connect, we can schedule a call.
-              Feel free to reach out via the links below.
+              I&apos;m always eager to explore new projects, technologies, and
+              opportunities. If you&apos;d like to connect, we can schedule a
+              call. Feel free to reach out via the links below.
             </p>
           </div>
           <div className="flex flex-row mt-6 items-center flex-wrap text-primary ">
