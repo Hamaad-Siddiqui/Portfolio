@@ -26,6 +26,7 @@ export default function Container(props: { children: React.ReactNode }) {
             </div>
           </a>
           <Image
+            unoptimized
             src="/static/media/mona.gif"
             alt="a cute ghost moving around"
             width={32}

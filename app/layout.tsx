@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import { montserrat, questrial } from "./fonts";
-import { AnalyticsWrapper } from "./analytics";
-import Providers from "./providers";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export default function RootLayout({
@@ -17,10 +17,9 @@ export default function RootLayout({
     >
       <head />
       <body className="bg-darkBackground">
-        <Providers>
-          <Container>{children}</Container>
-        </Providers>
-        <AnalyticsWrapper />
+        <Container>{children}</Container>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
