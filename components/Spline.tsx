@@ -1,21 +1,16 @@
 "use client";
-import { lazy, useState } from "react";
+
+import { lazy } from "react";
 
 const Spline = lazy(() => import("@splinetool/react-spline"));
 
-function getWindowDimensions() {
+function getWidth() {
   const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
+  return width;
 }
 
 export default function Chips() {
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
-  if (windowDimensions.width < 1024) return null;
+  if (getWidth() < 1024) return null;
   return (
     <Spline
       className="lg:block hidden"
