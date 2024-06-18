@@ -75,8 +75,8 @@ export default async function Home() {
         Past Projects
       </h2>
       <p className="text-primary mt-2 mb-10">
-        Here are some examples of my past work and clients. If you'd like to see
-        more, please feel free to contact me.
+        Here are some examples of my past work and clients. If you&apos;d like
+        to see more, please feel free to contact me.
       </p>
       <div className="flex flex-row justify-between items-center gap-10 flex-wrap max-[978px]:justify-center">
         {work.map((item, i) => (
