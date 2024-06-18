@@ -16,7 +16,7 @@ module.exports = {
     extend: {
       colors: {
         darkPrimary: "#E5E5E5",
-        darkBackground: "#000000",
+        darkBackground: "#030304",
 
         darkLight: "#27272A",
         darkBadge: "#1E1E1E",

@@ -2,7 +2,9 @@ import {
   MailIcon,
   GitHubIcon,
   TwitterIcon,
+  InstagramIcon,
   UpworkIcon,
+  FiverrIcon,
   LinkedInIcon,
 } from "./Icons";
 
@@ -34,7 +36,23 @@ export default function Links() {
         <TwitterIcon />
       </a>
       <a
-        href="https://www.upwork.com/freelancers/~015da25f21e50175bf"
+        href="https://www.instagram.com/hamaad.co"
+        className="text-darkPrimary"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <InstagramIcon />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/hamaad-siddiqui"
+        className="text-darkPrimary mb-1"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <LinkedInIcon />
+      </a>
+      <a
+        href="https://www.upwork.com/freelancers/hamaads"
         className="text-darkPrimary"
         target="_blank"
         rel="noreferrer"
@@ -42,12 +60,12 @@ export default function Links() {
         <UpworkIcon />
       </a>
       <a
-        href="https://www.linkedin.com/in/hamaad-siddiqui"
-        className="text-darkPrimary mt-1"
+        href="https://www.fiverr.com/hamaad_siddiqui"
+        className="text-darkPrimary"
         target="_blank"
         rel="noreferrer"
       >
-        <LinkedInIcon />
+        <FiverrIcon />
       </a>
     </div>
   );
