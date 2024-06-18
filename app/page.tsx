@@ -29,11 +29,11 @@ export default async function Home() {
             <Image
               src="/avatar.jpg"
               alt="Hamaad Siddiqui"
-              width={100}
-              height={100}
-              className="rounded-full mb-5"
+              width={95}
+              height={95}
+              className="rounded-full mb-4"
             />
-            <h1 className="font-semibold text-[45px] text-primary">
+            <h1 className="font-semibold text-4xl sm:text-[45px] text-primary">
               Hamaad Siddiqui
             </h1>
             <p className="text-primary mt-4">
@@ -48,7 +48,7 @@ export default async function Home() {
               reach out via the links below.
             </p>
           </div>
-          <div className="flex flex-row mt-5 items-center flex-wrap text-primary ">
+          <div className="flex flex-row mt-6 items-center flex-wrap text-primary ">
             <Links />
             <div className="flex mb-6">
               <a href="/meeting" target="_blank" rel="noreferrer">
