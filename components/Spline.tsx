@@ -10,7 +10,7 @@ function getWidth() {
 }
 
 export default function Chips() {
-  if (getWidth() < 1024) return null;
+  if (typeof window !== "undefined" && getWidth() < 1025) return null;
   return (
     <Spline
       className="lg:block hidden"
