@@ -7,6 +7,38 @@
       "destination": "/resume.pdf"
     },
     {
+      "source": "/calendly",
+      "destination": "https://calendly.com/hamaad-siddiqui"
+    },
+    {
+      "source": "/medium",
+      "destination": "https://medium.com/@HamaadSiddiqui"
+    },
+    {
+      "source": "/devto",
+      "destination": "https://dev.to/hamaad"
+    },
+    {
+      "source": "/unsplash",
+      "destination": "https://unsplash.com/@hamaadsiddiqui"
+    },
+    {
+      "source": "/youtube",
+      "destination": "https://www.youtube.com/@HamaadSiddiqui"
+    },
+    {
+      "source": "/reddit",
+      "destination": "https://www.reddit.com/user/Radi0ActiveChicken"
+    },
+    {
+      "source": "/fiverr",
+      "destination": "https://www.fiverr.com/hamaad_siddiqui"
+    },
+    {
+      "source": "/instagram",
+      "destination": "https://www.instagram.com/hamaad.co"
+    },
+    {
       "source": "/upwork",
       "destination": "https://www.upwork.com/freelancers/hamaads"
     },
