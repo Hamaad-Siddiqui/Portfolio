@@ -5,7 +5,7 @@ export default function Container(props: { children: React.ReactNode }) {
   const { children } = props;
   return (
     <>
-      <div className="mx-auto min-w-[20rem] mb-10 px-4 sm:px-6">
+      <div className="mx-auto min-w-[20rem] max-w-[80rem] mb-10 px-4 sm:px-6">
         <div className="flex flex-row justify-end w-full p-5">=</div>
         <div className="flex flex-col justify-center w-full">{children}</div>
         <div className="flex w-full items-center justify-between mt-[6rem] text-darkPrimary">

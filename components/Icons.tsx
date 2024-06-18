@@ -32,7 +32,7 @@ export const CCIcon = ({ size = 15 }: IconProps) => (
   </svg>
 );
 
-export const CalIcon = ({ width = 14, height = 16 }: IconProps) => (
+export const CalIcon = ({ width = 15, height = 16.5 }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
@@ -46,61 +46,19 @@ export const CalIcon = ({ width = 14, height = 16 }: IconProps) => (
   </svg>
 );
 
-export const DocIcon = ({ width = 13, height = 16 }: IconProps) => (
+export const DocIcon = ({ width = 14, height = 16.5 }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
     height={height}
-    viewBox="0 0 24 24"
+    viewBox="0 0 13 16"
   >
-    <g
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <g strokeWidth="2">
-        <path
-          strokeDasharray="64"
-          strokeDashoffset="64"
-          d="M13 3L19 9V21H5V3H13"
-        >
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            dur="0.6s"
-            values="64;0"
-          />
-        </path>
-        <path strokeDasharray="6" strokeDashoffset="6" d="M9 13H13">
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            begin="1s"
-            dur="0.2s"
-            values="6;0"
-          />
-        </path>
-        <path strokeDasharray="8" strokeDashoffset="8" d="M9 16H15">
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            begin="1.2s"
-            dur="0.2s"
-            values="8;0"
-          />
-        </path>
-      </g>
-      <path strokeDasharray="14" strokeDashoffset="14" d="M12.5 3V8.5H19">
-        <animate
-          fill="freeze"
-          attributeName="stroke-dashoffset"
-          begin="0.7s"
-          dur="0.2s"
-          values="14;0"
-        />
-      </path>
-    </g>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M0.888062 2C0.888062 1.60218 1.0402 1.22064 1.31101 0.93934C1.58182 0.658035 1.94911 0.5 2.33209 0.5H10.9963C11.3793 0.5 11.7465 0.658035 12.0174 0.93934C12.2882 1.22064 12.4403 1.60218 12.4403 2V14C12.4403 14.3978 12.2882 14.7794 12.0174 15.0607C11.7465 15.342 11.3793 15.5 10.9963 15.5H2.33209C1.94911 15.5 1.58182 15.342 1.31101 15.0607C1.0402 14.7794 0.888062 14.3978 0.888062 14V2ZM10.9963 2H2.33209V14H10.9963V2ZM3.77612 5.75C3.77612 5.55109 3.85219 5.36032 3.98759 5.21967C4.123 5.07902 4.30665 5 4.49814 5H8.83023C9.02172 5 9.20536 5.07902 9.34077 5.21967C9.47617 5.36032 9.55224 5.55109 9.55224 5.75C9.55224 5.94891 9.47617 6.13968 9.34077 6.28033C9.20536 6.42098 9.02172 6.5 8.83023 6.5H4.49814C4.30665 6.5 4.123 6.42098 3.98759 6.28033C3.85219 6.13968 3.77612 5.94891 3.77612 5.75ZM4.49814 8.75C4.30665 8.75 4.123 8.82902 3.98759 8.96967C3.85219 9.11032 3.77612 9.30109 3.77612 9.5C3.77612 9.69891 3.85219 9.88968 3.98759 10.0303C4.123 10.171 4.30665 10.25 4.49814 10.25H6.66418C6.85567 10.25 7.03932 10.171 7.17472 10.0303C7.31013 9.88968 7.3862 9.69891 7.3862 9.5C7.3862 9.30109 7.31013 9.11032 7.17472 8.96967C7.03932 8.82902 6.85567 8.75 6.66418 8.75H4.49814Z"
+      fill="currentColor"
+    />
   </svg>
 );
 

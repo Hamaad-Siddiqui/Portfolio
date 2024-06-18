@@ -26,10 +26,8 @@ h3 {
 h4 {
   font-family: var(--font-montserrat);
 }
+#chips,
 #chips canvas {
-  margin: auto;
-  width: 600px !important;
-  height: 600px !important;
-  max-width: 80vw;
-  max-height: 80vw;
+  width: 500px !important;
+  height: 500px !important;
 }

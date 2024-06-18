@@ -23,49 +23,53 @@ export default async function Home() {
   const work = await getWork();
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col max-w-[42rem] gap-1 mt-4">
-        {/* <Image
-          src="/avatar.jpg"
-          alt="Hamaad Siddiqui"
-          width={96}
-          height={96}
-          className="rounded-full mb-5"
-        /> */}
-        <Chips />
-        <h1 className="font-semibold text-[60px] text-darkPrimary">
-          Hamaad Siddiqui
-        </h1>
-        <p className="text-darkPrimary mt-4">
-          Full-Stack Developer building intuitive and efficient applications
-          using React / Next.js & Flutter. Passionate about staying current with
-          industry developments and continuously expanding my skillset to
-          deliver innovative solutions.
-        </p>
-        <p className="text-darkPrimary mt-4">
-          I am always interested in new projects, tech, and opportunities. If
-          you would like to connect we can schedule a call, you can also reach
-          out via the links below.
-        </p>
-      </div>
-      <div className="flex flex-row mt-5 items-center flex-wrap text-darkPrimary ">
-        <Links />
-        <div className="flex mb-6">
-          <a href="/meeting" target="_blank" rel="noreferrer">
-            <button className="border border-darkPrimary text-base px-1 pr-2 rounded flex items-center gap-2">
-              <CalIcon /> Book a call
-            </button>
-          </a>
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="ml-6"
-          >
-            <button className="border border-darkPrimary text-base px-1 pr-2 rounded flex items-center gap-2">
-              <DocIcon /> Résumé
-            </button>
-          </a>
+      <div className="flex flex-row justify-between">
+        <div>
+          <div className="flex flex-col max-w-[42rem] gap-1 mt-4">
+            <Image
+              src="/avatar.jpg"
+              alt="Hamaad Siddiqui"
+              width={100}
+              height={100}
+              className="rounded-full mb-5"
+            />
+            <h1 className="font-semibold text-[45px] text-darkPrimary">
+              Hamaad Siddiqui
+            </h1>
+            <p className="text-darkPrimary mt-4">
+              Full-Stack Developer building intuitive and efficient applications
+              using React / Next.js & Flutter. Passionate about staying current
+              with industry developments and continuously expanding my skillset
+              to deliver innovative solutions.
+            </p>
+            <p className="text-darkPrimary mt-4">
+              I am always interested in new projects, tech, and opportunities.
+              If you would like to connect we can schedule a call, you can also
+              reach out via the links below.
+            </p>
+          </div>
+          <div className="flex flex-row mt-5 items-center flex-wrap text-darkPrimary ">
+            <Links />
+            <div className="flex mb-6">
+              <a href="/meeting" target="_blank" rel="noreferrer">
+                <button className="border border-darkPrimary text-xl px-1.5 py-[0.5px] pr-2 rounded flex items-center gap-2">
+                  <CalIcon /> Book a call
+                </button>
+              </a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="ml-6"
+              >
+                <button className="border border-darkPrimary text-xl px-1.5 py-[0.5px] pr-2 rounded flex items-center gap-2">
+                  <DocIcon /> Résumé
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
+        <Chips />
       </div>
       <h2 className="font-semibold text-3xl text-darkPrimary mt-10">
         Past Projects
