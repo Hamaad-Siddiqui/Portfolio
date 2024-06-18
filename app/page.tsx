@@ -29,23 +29,23 @@ export default async function Home() {
             <Image
               src="/avatar.jpg"
               alt="Hamaad Siddiqui"
-              width={95}
-              height={95}
+              width={98}
+              height={98}
               className="rounded-full mb-4"
             />
             <h1 className="font-semibold text-4xl sm:text-[45px] text-primary">
               Hamaad Siddiqui
             </h1>
             <p className="text-primary mt-4">
-              Full-Stack Developer building intuitive and efficient applications
-              using React / Next.js & Flutter. Passionate about staying current
+              Full-Stack Developer excelling in crafting intuitive, efficient
+              applications across industries. Passionate about staying current
               with industry developments and continuously expanding my skillset
               to deliver innovative solutions.
             </p>
             <p className="text-primary mt-4">
-              I am always interested in new projects, tech, and opportunities.
-              If you would like to connect we can schedule a call, you can also
-              reach out via the links below.
+              I'm always eager to explore new projects, technologies, and
+              opportunities. If you'd like to connect, we can schedule a call.
+              Feel free to reach out via the links below.
             </p>
           </div>
           <div className="flex flex-row mt-6 items-center flex-wrap text-primary ">
@@ -71,12 +71,12 @@ export default async function Home() {
         </div>
         <Chips />
       </div>
-      <h2 className="font-semibold text-3xl text-primary mt-10">
+      <h2 className="font-semibold text-3xl text-primary mt-6">
         Past Projects
       </h2>
       <p className="text-primary mt-2 mb-10">
-        Here is a list of few of my past work & clients, if you want to see more
-        feel free to contact me.
+        Here are some examples of my past work and clients. If you'd like to see
+        more, please feel free to contact me.
       </p>
       <div className="flex flex-row justify-between items-center gap-10 flex-wrap max-[978px]:justify-center">
         {work.map((item, i) => (
