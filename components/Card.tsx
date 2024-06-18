@@ -5,7 +5,7 @@ import { AppStoreIcon, GitHubIcon, LinkIcon, PlayStoreIcon } from "./Icons";
 
 export default function Card(props: Work) {
   return (
-    <div className="flex flex-col border border-darkLight rounded-md px-5 py-4 h-[14.5rem] max-[350px]:h-60 w-[22rem]">
+    <div className="flex flex-col border border-light rounded-md px-5 py-4 h-[14.5rem] max-[350px]:h-60 w-[22rem]">
       <div className="flex flex-row max-[374px]:flex-row-reverse items-center gap-5 max-[374px]:gap-2">
         <Image
           src={urlForImage(props.image).url()}
@@ -14,7 +14,7 @@ export default function Card(props: Work) {
           height={76}
           className="rounded-full max-[350px]:w-16 max-[350px]:h-16"
         />
-        <div className="flex flex-col gap-1 text-darkPrimary">
+        <div className="flex flex-col gap-1 text-primary">
           <h1 className="font-medium text-2xl">{props.title}</h1>
           <p className="text-[0.875rem]">{props.description}</p>
         </div>
@@ -23,14 +23,14 @@ export default function Card(props: Work) {
         <div className="flex flex-row items-center gap-2 flex-wrap">
           {props.stack.map((name, i) => (
             <span
-              className="bg-darkBadge text-[12px] font-medium py-0.5 px-2 rounded-xl text-darkPrimary"
+              className="bg-badge text-[12px] font-medium py-0.5 px-2 rounded-xl text-primary"
               key={i}
             >
               {name}
             </span>
           ))}
         </div>
-        <div className="flex flex-row mt-2 items-end justify-between w-full text-darkPrimary ">
+        <div className="flex flex-row mt-2 items-end justify-between w-full text-primary ">
           <div className="flex flex-row items-center">
             {props.tags.map((tag, i) => (
               <div

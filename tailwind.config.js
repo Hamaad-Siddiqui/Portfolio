@@ -15,11 +15,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        darkPrimary: "#E5E5E5",
-        darkBackground: "#030304",
+        primary: "#E5E5E5",
+        background: "#030304",
 
-        darkLight: "#27272A",
-        darkBadge: "#1E1E1E",
+        light: "#27272A",
+        badge: "#1E1E1E",
       },
       fontFamily: {
         sans: ["var(--font-montserrat)", ...defaultTheme.fontFamily.sans],

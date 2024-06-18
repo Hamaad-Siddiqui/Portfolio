@@ -16,7 +16,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head />
-      <body className="bg-darkBackground">
+      <body className="bg-background">
         <Container>{children}</Container>
         <SpeedInsights />
         <Analytics />

@@ -33,26 +33,26 @@ export default async function Home() {
               height={100}
               className="rounded-full mb-5"
             />
-            <h1 className="font-semibold text-[45px] text-darkPrimary">
+            <h1 className="font-semibold text-[45px] text-primary">
               Hamaad Siddiqui
             </h1>
-            <p className="text-darkPrimary mt-4">
+            <p className="text-primary mt-4">
               Full-Stack Developer building intuitive and efficient applications
               using React / Next.js & Flutter. Passionate about staying current
               with industry developments and continuously expanding my skillset
               to deliver innovative solutions.
             </p>
-            <p className="text-darkPrimary mt-4">
+            <p className="text-primary mt-4">
               I am always interested in new projects, tech, and opportunities.
               If you would like to connect we can schedule a call, you can also
               reach out via the links below.
             </p>
           </div>
-          <div className="flex flex-row mt-5 items-center flex-wrap text-darkPrimary ">
+          <div className="flex flex-row mt-5 items-center flex-wrap text-primary ">
             <Links />
             <div className="flex mb-6">
               <a href="/meeting" target="_blank" rel="noreferrer">
-                <button className="border border-darkPrimary text-xl px-1.5 py-[0.5px] pr-2 rounded flex items-center gap-2">
+                <button className="border border-primary text-xl px-1.5 py-[0.5px] pr-2 rounded flex items-center gap-2">
                   <CalIcon /> Book a call
                 </button>
               </a>
@@ -62,7 +62,7 @@ export default async function Home() {
                 rel="noreferrer"
                 className="ml-6"
               >
-                <button className="border border-darkPrimary text-xl px-1.5 py-[0.5px] pr-2 rounded flex items-center gap-2">
+                <button className="border border-primary text-xl px-1.5 py-[0.5px] pr-2 rounded flex items-center gap-2">
                   <DocIcon /> Résumé
                 </button>
               </a>
@@ -71,10 +71,10 @@ export default async function Home() {
         </div>
         <Chips />
       </div>
-      <h2 className="font-semibold text-3xl text-darkPrimary mt-10">
+      <h2 className="font-semibold text-3xl text-primary mt-10">
         Past Projects
       </h2>
-      <p className="text-darkPrimary mt-2 mb-10">
+      <p className="text-primary mt-2 mb-10">
         Here is a list of few of my past work & clients, if you want to see more
         feel free to contact me.
       </p>

@@ -13,7 +13,7 @@ export default function Links() {
     <div className="flex flex-row items-center justify-start gap-[13px] mr-7 mb-6">
       <a
         href="mailto:hamaad_siddiqui@hotmail.com"
-        className="text-darkPrimary"
+        className="text-primary"
         target="_blank"
         rel="noreferrer"
       >
@@ -21,7 +21,7 @@ export default function Links() {
       </a>
       <a
         href="https://github.com/Hamaad-Siddiqui"
-        className="text-darkPrimary"
+        className="text-primary"
         target="_blank"
         rel="noreferrer"
       >
@@ -29,7 +29,7 @@ export default function Links() {
       </a>
       <a
         href="https://twitter.com/HamaadSiddiqui"
-        className="text-darkPrimary"
+        className="text-primary"
         target="_blank"
         rel="noreferrer"
       >
@@ -37,7 +37,7 @@ export default function Links() {
       </a>
       <a
         href="https://www.instagram.com/hamaad.co"
-        className="text-darkPrimary"
+        className="text-primary"
         target="_blank"
         rel="noreferrer"
       >
@@ -45,7 +45,7 @@ export default function Links() {
       </a>
       <a
         href="https://www.linkedin.com/in/hamaad-siddiqui"
-        className="text-darkPrimary mb-1"
+        className="text-primary mb-1"
         target="_blank"
         rel="noreferrer"
       >
@@ -53,7 +53,7 @@ export default function Links() {
       </a>
       <a
         href="https://www.upwork.com/freelancers/hamaads"
-        className="text-darkPrimary"
+        className="text-primary"
         target="_blank"
         rel="noreferrer"
       >
@@ -61,7 +61,7 @@ export default function Links() {
       </a>
       <a
         href="https://www.fiverr.com/hamaad_siddiqui"
-        className="text-darkPrimary"
+        className="text-primary"
         target="_blank"
         rel="noreferrer"
       >
