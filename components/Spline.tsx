@@ -15,13 +15,12 @@ export default function Chips() {
   const [windowDimensions, setWindowDimensions] = useState(
     getWindowDimensions()
   );
-  if (windowDimensions.width > 1024) {
-    return (
-      <Spline
-        className="lg:block hidden"
-        scene="https://prod.spline.design/VAJ9Nf1Q4o5eEJU5/scene.splinecode"
-        id="chips"
-      />
-    );
-  }
+  if (windowDimensions.width < 1024) return null;
+  return (
+    <Spline
+      className="lg:block hidden"
+      scene="https://prod.spline.design/VAJ9Nf1Q4o5eEJU5/scene.splinecode"
+      id="chips"
+    />
+  );
 }
