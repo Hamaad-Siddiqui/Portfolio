@@ -22,7 +22,7 @@ export default function Container(props: { children: React.ReactNode }) {
               <ForkIcon />{" "}
               <div className="max-[450px]:hidden mt-1">
                 Made with <span className="text-[14px]">🤍</span> in Next.js,
-                Tailwind, Sanity, Spline & Framer
+                Tailwind, Sanity & Spline
               </div>
             </div>
           </a>
