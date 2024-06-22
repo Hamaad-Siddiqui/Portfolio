@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { client } from "@/lib/sanity-server";
 import { Work } from "@/lib/types";
@@ -71,11 +72,11 @@ export default async function Home() {
         </div>
         <Chips />
       </div>
-      <h2 className="font-semibold text-3xl text-primary mt-10">
+      <h2 className="font-semibold text-3xl text-primary mt-7">
         Past Projects
       </h2>
       <p className="text-primary mt-2 mb-10">
-        Here are some examples of my past work and clients. If you&apos;d like
+        Here are some examples of my past work and projects. If you&apos;d like
         to see more, please feel free to contact me.
       </p>
       <div className="flex flex-row justify-between items-center gap-10 flex-wrap max-[978px]:justify-center">
@@ -90,6 +91,119 @@ export default async function Home() {
             links={item.links}
           />
         ))}
+      </div>
+      <div className="flex flex-row flex-wrap justify-between">
+        <div className="flex flex-col">
+          <h2 className="font-semibold text-3xl text-primary mt-16 mb-2">
+            Experience
+          </h2>
+          <div className="mt-5">
+            <h4 className="text-primary font-medium">
+              AtlasPro AI{" "}
+              <span className="font-normal ml-1.5 text-[15.5px]">
+                Bay Area (Remote)
+              </span>
+            </h4>
+            <p className="mt-1 text-ash">
+              Full Stack Developer | Oct 2023 — Jan 2024
+            </p>
+          </div>
+          <div className="mt-5">
+            <h4 className="text-primary font-medium">
+              Kupid AI{" "}
+              <span className="font-normal ml-1.5 text-[15.5px]">
+                France (Remote)
+              </span>
+            </h4>
+            <p className="mt-1 text-ash">
+              Full Stack Developer | Jun 2023 — Dec 2023
+            </p>
+          </div>
+          <div className="mt-5">
+            <h4 className="text-primary font-medium">
+              DiscoCrate
+              <span className="font-normal ml-1.5 text-[15.5px]">
+                Singapore (Remote)
+              </span>
+            </h4>
+            <p className="mt-1 text-ash">
+              Software Engineer | Jan 2023 — Nov 2023
+            </p>
+          </div>
+          <div className="mt-5">
+            <h4 className="text-primary font-medium">
+              iPurvey
+              <span className="font-normal ml-1.5 text-[15.5px]">
+                London, UK (Remote)
+              </span>
+            </h4>
+            <p className="mt-1 text-ash">
+              Senior Front-end Developer | Jun 2021 — Jun 2023
+            </p>
+          </div>
+          <div className="mt-5">
+            <h4 className="text-primary font-medium">
+              HitPiece
+              <span className="font-normal ml-1.5 text-[15.5px]">
+                Utah, USA (Remote)
+              </span>
+            </h4>
+            <p className="mt-1 text-ash">
+              Full Stack Developer | May 2022 — Aug 2022
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <div className="flex flex-col">
+            <div className="flex flex-col">
+              <h2 className="font-semibold text-3xl text-grass mt-16 ">
+                Hire Me
+              </h2>
+              <p className="text-primary mt-2 max-w-[480px]">
+                I am currently available for new opportunities. If you&apos;d
+                like to discuss a project, collaboration, or just want to say
+                hello, feel free to reach out at:{"  "}
+                <a
+                  href="mailto:hamaad_siddiqui@hotmail.com"
+                  className="text-ash hover:text-primary"
+                >
+                  hamaad_siddiqui@hotmail.com
+                </a>
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <h2 className="font-semibold text-3xl text-primary mt-8 ">
+                Education
+              </h2>
+              <div className="mt-5">
+                <h4 className="text-primary font-medium">
+                  FAST-NUCES
+                  <span className="font-normal ml-1.5 text-[15.5px]">
+                    Lahore, PK
+                  </span>
+                </h4>
+                <p className="mt-1 text-ash">
+                  B.S. Computer Science with minor in Robotics & Automation
+                </p>
+              </div>
+            </div>
+            <h2 className="font-semibold text-3xl text-primary mt-8 ">
+              Achievements
+            </h2>
+            <div className="mt-5">
+              <div className="text-primary underline text-[15px]">
+                <Link href="https://www.linkedin.com/posts/hamaad-siddiqui_we-won-the-softec23-app-dev-competition-activity-7163078979694780416-CCM8">
+                  Winners of Softec’23 App Dev Competition
+                </Link>
+              </div>
+              <div className="text-primary underline text-[15px] mt-3">
+                <Link href="https://www.upwork.com/freelancers/hamaads">
+                  Upwork Top-Rated Freelancer
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

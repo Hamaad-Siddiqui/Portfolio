@@ -17,9 +17,10 @@ module.exports = {
       colors: {
         primary: "#E5E5E5",
         background: "#030304",
-
+        ash: "#bababa",
         light: "#27272A",
         badge: "#1E1E1E",
+        grass: "#3ef760",
       },
       fontFamily: {
         sans: ["var(--font-montserrat)", ...defaultTheme.fontFamily.sans],
