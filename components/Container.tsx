@@ -20,8 +20,9 @@ export default function Container(props: { children: React.ReactNode }) {
           >
             <div className="flex items-center gap-1 hover:text-blue-400">
               <ForkIcon />{" "}
-              <div className="max-[450px]:hidden ">
-                Made with &lt;3! in Next.js, Tailwind & Sanity
+              <div className="max-[450px]:hidden mt-1">
+                Made with <span className="text-[14px]">🤍</span> in Next.js,
+                Tailwind, Sanity, Spline & Framer
               </div>
             </div>
           </a>
