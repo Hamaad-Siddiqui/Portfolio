@@ -6,8 +6,9 @@ export default function Container(props: { children: React.ReactNode }) {
   return (
     <>
       <div className="mx-auto min-w-[20rem] max-w-[80rem] mb-10 px-4 sm:px-6">
-        <div className="flex flex-row justify-end w-full p-5">=</div>
-        <div className="flex flex-col justify-center w-full">{children}</div>
+        <div className="flex flex-col justify-center w-full mt-16">
+          {children}
+        </div>
         <div className="flex w-full items-center justify-between mt-[5rem] text-primary px-3 sm:px-0">
           <div className="flex items-center gap-1">
             <CCIcon />
