@@ -132,17 +132,6 @@ export default async function Home() {
           </div>
           <div className="mt-5">
             <h4 className="text-primary font-medium">
-              iPurvey
-              <span className="font-normal ml-1.5 text-[15.5px]">
-                London, UK (Remote)
-              </span>
-            </h4>
-            <p className="mt-1 text-ash">
-              Senior Front-end Developer | Jun 2021 — Jun 2023
-            </p>
-          </div>
-          <div className="mt-5">
-            <h4 className="text-primary font-medium">
               HitPiece
               <span className="font-normal ml-1.5 text-[15.5px]">
                 Utah, USA (Remote)
@@ -150,6 +139,17 @@ export default async function Home() {
             </h4>
             <p className="mt-1 text-ash">
               Full Stack Developer | May 2022 — Aug 2022
+            </p>
+          </div>
+          <div className="mt-5">
+            <h4 className="text-primary font-medium">
+              iPurvey
+              <span className="font-normal ml-1.5 text-[15.5px]">
+                London, UK (Remote)
+              </span>
+            </h4>
+            <p className="mt-1 text-ash">
+              Senior Front-end Developer | Jun 2021 — Jun 2023
             </p>
           </div>
         </div>
