@@ -105,7 +105,7 @@ export default async function Home() {
               </span>
             </h4>
             <p className="mt-1 text-ash">
-              Full Stack Developer | Oct 2023 — Jan 2024
+              Full Stack Developer | Dec 2023 — Feb 2024
             </p>
           </div>
           <div className="mt-5">
