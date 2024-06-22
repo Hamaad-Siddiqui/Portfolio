@@ -1,56 +1,57 @@
 export const schemaTypes = [
- {
-  title: 'Work',
-  name: 'work',
-  type: 'document',
-  fields: [
-   {
-    title: 'Position/Index in the website',
-    name: 'position',
-    type: 'number',
-   },
-   {
-    title: 'Title',
-    name: 'title',
-    type: 'string',
-   },
-   {
-    title: 'Description',
-    name: 'description',
-    type: 'text',
-    rows: 4,
-   },
-   {
-    title: 'Image',
-    name: 'image',
-    type: 'image',
-   },
-   {
-    title: 'Stack',
-    name: 'stack',
-    type: 'array',
-    of: [{ type: 'string' }],
-   },
-   {
-    title: 'Tags',
-    name: 'tags',
-    type: 'array',
-    of: [{ type: 'string' }],
-    options: {
-     layout: 'tags',
-    },
-   },
-   {
-    title: 'Links',
-    name: 'links',
-    type: 'object',
+  {
+    title: "Work",
+    name: "work",
+    type: "document",
     fields: [
-     { name: 'github', type: 'url', title: 'Github' },
-     { name: 'website', type: 'url', title: 'Website' },
-     { name: 'appStore', type: 'url', title: 'App Store' },
-     { name: 'playStore', type: 'url', title: 'Play Store' },
+      {
+        title: "Position/Index in the website",
+        name: "position",
+        type: "number",
+      },
+      {
+        title: "Title",
+        name: "title",
+        type: "string",
+      },
+      {
+        title: "Description",
+        name: "description",
+        type: "text",
+        rows: 4,
+      },
+      {
+        title: "Image",
+        name: "image",
+        type: "image",
+      },
+      {
+        title: "Stack",
+        name: "stack",
+        type: "array",
+        of: [{ type: "string" }],
+      },
+      {
+        title: "Tags",
+        name: "tags",
+        type: "array",
+        of: [{ type: "string" }],
+        options: {
+          layout: "tags",
+        },
+      },
+      {
+        title: "Links",
+        name: "links",
+        type: "object",
+        fields: [
+          { name: "github", type: "url", title: "Github" },
+          { name: "website", type: "url", title: "Website" },
+          { name: "appStore", type: "url", title: "App Store" },
+          { name: "playStore", type: "url", title: "Play Store" },
+          { name: "figma", type: "url", title: "Figma" },
+        ],
+      },
     ],
-   },
-  ],
- },
+  },
 ];

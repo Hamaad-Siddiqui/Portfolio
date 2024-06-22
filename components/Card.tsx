@@ -1,7 +1,13 @@
 import Image from "next/image";
 import { Work } from "@/lib/types";
 import { urlForImage } from "@/lib/sanity";
-import { AppStoreIcon, GitHubIcon, LinkIcon, PlayStoreIcon } from "./Icons";
+import {
+  AppStoreIcon,
+  FigmaIcon,
+  GitHubIcon,
+  LinkIcon,
+  PlayStoreIcon,
+} from "./Icons";
 
 export default function Card(props: Work) {
   return (
@@ -61,6 +67,11 @@ export default function Card(props: Work) {
             {props.links.appStore && (
               <a href={props.links.appStore} target="_blank" rel="noreferrer">
                 <AppStoreIcon />
+              </a>
+            )}
+            {props.links.figma && (
+              <a href={props.links.figma} target="_blank" rel="noreferrer">
+                <FigmaIcon />
               </a>
             )}
           </div>
