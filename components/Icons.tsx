@@ -18,7 +18,7 @@ export const ForkIcon = ({ height = 20, width = 20 }: IconProps) => (
   </svg>
 );
 
-export const CCIcon = ({ size = 15 }: IconProps) => (
+export const CCIcon = ({ size = 16 }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
