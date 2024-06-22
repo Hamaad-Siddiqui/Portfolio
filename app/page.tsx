@@ -94,7 +94,7 @@ export default async function Home() {
       </div>
       <div className="flex flex-row flex-wrap justify-between">
         <div className="flex flex-col">
-          <h2 className="font-semibold text-3xl text-primary mt-16 mb-2">
+          <h2 className="font-semibold text-3xl text-primary mt-16 mb-1">
             Experience
           </h2>
           <div className="mt-5">
@@ -159,7 +159,7 @@ export default async function Home() {
               <h2 className="font-semibold text-3xl text-grass mt-16 ">
                 Hire Me
               </h2>
-              <p className="text-primary mt-2 max-w-[480px]">
+              <p className="text-primary mt-3 max-w-[480px]">
                 I am currently available for new opportunities. If you&apos;d
                 like to discuss a project, collaboration, or just want to say
                 hello, feel free to reach out at:{"  "}
@@ -172,10 +172,10 @@ export default async function Home() {
               </p>
             </div>
             <div className="flex flex-col">
-              <h2 className="font-semibold text-3xl text-primary mt-8 ">
+              <h2 className="font-semibold text-3xl text-primary mt-8">
                 Education
               </h2>
-              <div className="mt-5">
+              <div className="mt-3">
                 <h4 className="text-primary font-medium">
                   FAST-NUCES
                   <span className="font-normal ml-1.5 text-[15.5px]">
@@ -187,10 +187,10 @@ export default async function Home() {
                 </p>
               </div>
             </div>
-            <h2 className="font-semibold text-3xl text-primary mt-8 ">
+            <h2 className="font-semibold text-3xl text-primary mt-8">
               Achievements
             </h2>
-            <div className="mt-5">
+            <div className="mt-3">
               <div className="text-primary underline text-[15px]">
                 <Link href="https://www.linkedin.com/posts/hamaad-siddiqui_we-won-the-softec23-app-dev-competition-activity-7163078979694780416-CCM8">
                   Winners of Softec’23 App Dev Competition
